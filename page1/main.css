@@ -27,6 +27,7 @@ p {
      font-family: "Tinos", serif;
   font-weight: 400;
   font-style: normal;
+     text-align: center;
   
 }
 
@@ -93,4 +94,5 @@ li{
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
+
 }
