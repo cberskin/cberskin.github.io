@@ -97,3 +97,122 @@ li{
 
 }
 
+/* Article content styling */
+.article-content {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #333;
+  margin-top: 2rem;
+}
+
+/* Lead paragraph styling */
+.article-content .lead {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Regular paragraph spacing */
+.article-content p {
+  margin-bottom: 1.5rem;
+}
+
+/* Visualization container */
+.visualization {
+  margin: 2.5rem 0;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Make images responsive */
+.visualization img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+/* Caption styling */
+.visualization figcaption {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #555;
+  padding: 0 1rem;
+}
+
+.visualization figcaption strong {
+  display: block;
+  font-size: 16px;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.visualization figcaption .source {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  font-style: italic;
+  margin-top: 0.75rem;
+}
+
+/* Special styling for side-by-side pie charts */
+.pie-charts .row {
+  margin-bottom: 1rem;
+}
+
+.pie-charts .col-md-6 {
+  padding: 0.5rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .article-content {
+    font-size: 16px;
+  }
+  
+  .article-content .lead {
+    font-size: 19px;
+  }
+  
+  .visualization {
+    padding: 1rem;
+    margin: 2rem -15px;
+    border-radius: 0;
+  }
+  
+  .visualization figcaption {
+    font-size: 14px;
+    padding: 0 0.5rem;
+  }
+  
+  .pie-charts .col-md-6 {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .article-content {
+    font-size: 15px;
+  }
+  
+  .article-content .lead {
+    font-size: 18px;
+  }
+  
+  .visualization figcaption {
+    font-size: 13px;
+  }
+}
+
+/* Print styles */
+@media print {
+  .visualization {
+    page-break-inside: avoid;
+    background-color: white;
+  }
+}
